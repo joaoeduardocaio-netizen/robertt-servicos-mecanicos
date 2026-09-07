@@ -51,7 +51,8 @@ button{font:inherit;color:inherit}
   position:absolute;right:0;top:0;width:50%;height:470px;
   background-image:url('hero-car.jpg');
   background-size:cover;background-position:center;
-  filter: brightness(1.45) contrast(1.20) saturate(1.18);}
+  filter:contrast(1.08) brightness(.88)
+}
 .hero-car:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#050505 0,transparent 52%)}
 .hero-shade{position:absolute;inset:auto 0 0;height:180px;background:linear-gradient(transparent,#050505)}
 .hero-content{
@@ -95,7 +96,7 @@ button{font:inherit;color:inherit}
 .section-head i{display:block;width:62px;height:4px;background:var(--red);margin-bottom:17px}
 .services-grid{display:grid;grid-template-columns:1fr 1fr;gap:13px}
 .service-card{border:1px solid #36363a;border-radius:8px;overflow:hidden;background:#0b0b0c}
-.service-photo{height:175px;background-size:cover;background-position:center;filter:brightness(1.18) contrast(1.14) saturate(1.12)}
+.service-photo{height:175px;background-size:cover;background-position:center}
 .service-body{padding:10px 16px 15px}
 .service-body small{color:var(--red);font-weight:900;font-size:11px}
 .service-body h3{font-size:18px;margin:6px 0 4px}
@@ -125,7 +126,7 @@ button{font:inherit;color:inherit}
   display:flex;align-items:center;justify-content:center;background:linear-gradient(#ff2a31,#ef0e15);
   font-weight:900;font-size:14px
 }
-.map-visual{background:url('mapa.jpg') center/cover no-repeat;min-height:255px;position:relative;filter:brightness(1.16) contrast(1.12) saturate(1.08)}
+.map-visual{background:url('mapa.jpg') center/cover no-repeat;min-height:255px;position:relative}
 .map-visual:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#070707,transparent 32%)}
 
 .contact-strip{
@@ -157,7 +158,7 @@ button{font:inherit;color:inherit}
   .hero{min-height:500px;background:#050505}
   .hero-car{
     width:58%;height:300px;right:-9%;top:18px;
-    opacity:1;background-position:center
+    opacity:.96;background-position:center
   }
   .hero-car:after{background:linear-gradient(90deg,#050505 0,transparent 72%),linear-gradient(0deg,#050505 0,transparent 25%)}
   .hero-content{padding:73px 18px 20px}
@@ -200,21 +201,4 @@ button{font:inherit;color:inherit}
   .footer p{font-size:9px}
   .footer-icons{font-size:19px;gap:10px}
   .floating-wa{width:54px;height:54px;right:16px;bottom:16px}
-}
-
-/* =========================================================
-   ROBERTT — AJUSTE MOBILE DO BANNER
-   Mantém o layout e deixa somente o carro mais visível.
-   ========================================================= */
-@media (max-width:760px){
-  .hero-car{
-    opacity:1;
-    filter:brightness(1.45) contrast(1.20) saturate(1.18);
-  }
-
-  .hero-car:after{
-    background:
-      linear-gradient(90deg,#050505 0,rgba(5,5,5,.35) 38%,transparent 78%),
-      linear-gradient(0deg,#050505 0,rgba(5,5,5,.15) 18%,transparent 32%);
-  }
 }
