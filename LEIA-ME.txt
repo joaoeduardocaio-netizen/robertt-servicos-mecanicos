@@ -1,20 +1,9 @@
-ROBERTT — SERVIÇOS MECÂNICOS — V3
+ROBERTT Serviços Mecânicos — v6
 
-Versão refeita para ficar o mais próxima possível da referência aprovada.
+Correções:
+- Banner restaurado com brilho/nitidez forte no desktop e mobile.
+- Botão LOCALIZAÇÃO da navegação abre a rota no Google Maps.
+- Localização do menu lateral abre a rota no Google Maps.
+- Botão ABRIR ROTA NO GOOGLE MAPS usa o ponto exato enviado.
 
-SUBSTITUA NO GITHUB:
-- index.html
-- style.css
-- script.js
-- logo-robertt.png
-- hero-car.jpg
-- servico-oleo.jpg
-- servico-freios.jpg
-- servico-suspensao.jpg
-- servico-diagnostico.jpg
-- mapa.jpg
-
-WhatsApp configurado:
-(48) 99802-0978
-
-Ainda falta apenas preencher a localização/Google Maps real quando você me passar o endereço.
+Destino: Rua Vereador Arnaldo dos Santos, 107 — Siderópolis/SC.

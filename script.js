@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const CONFIG = {
     whatsapp: "5548998020978",
     message: "Olá, Robertt! Vim pelo site e gostaria de solicitar um orçamento.",
-    maps: ""
+    maps: "https://www.google.com/maps/dir/?api=1&destination=-28.6004901%2C-49.4294435&destination_place_id=ChIJgbitKBSdIZURnt6MxdhD5M4"
   };
 
   const drawer = document.querySelector("#drawer");
@@ -33,14 +33,9 @@ document.addEventListener("DOMContentLoaded", () => {
     link.rel = "noopener";
   });
 
-  document.querySelector("#mapBtn")?.addEventListener("click", event => {
-    if (!CONFIG.maps) {
-      event.preventDefault();
-      alert("A localização do Robertt será adicionada no próximo ajuste.");
-      return;
-    }
-    event.currentTarget.href = CONFIG.maps;
-    event.currentTarget.target = "_blank";
-    event.currentTarget.rel = "noopener";
+  document.querySelectorAll('[href*="google.com/maps/dir"], #mapBtn').forEach(link => {
+    link.href = CONFIG.maps;
+    link.target = "_blank";
+    link.rel = "noopener";
   });
 });
