@@ -3,213 +3,180 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="theme-color" content="#070707">
-  <meta name="description" content="ROBERTT Serviços Mecânicos — pequenos reparos, manutenção e diagnóstico automotivo.">
+  <meta name="theme-color" content="#050505">
+  <meta name="description" content="ROBERTT Serviços Mecânicos — pequenos reparos, grandes soluções.">
   <title>ROBERTT — Serviços Mecânicos</title>
-  <link rel="stylesheet" href="style.css?v=2">
+  <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
-  <header class="topbar">
-    <a class="brand" href="#inicio" aria-label="ROBERTT Serviços Mecânicos">
+  <header class="header">
+    <a href="#inicio" class="brand">
       <img src="logo-robertt.png" alt="ROBERTT Serviços Mecânicos">
     </a>
-
-    <button class="menu-btn" id="menuBtn" type="button" aria-label="Abrir menu">
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menu">
       <span></span><span></span><span></span>
     </button>
   </header>
 
-  <aside class="drawer" id="drawer" aria-hidden="true">
-    <button class="drawer-close" id="drawerClose" type="button" aria-label="Fechar menu">×</button>
-    <div class="drawer-logo">
-      <img src="logo-robertt.png" alt="">
-    </div>
+  <aside class="drawer" id="drawer">
+    <button class="drawer-close" id="drawerClose" aria-label="Fechar">×</button>
+    <img src="logo-robertt.png" alt="" class="drawer-logo">
     <a href="#servicos">Serviços</a>
     <a href="#sobre">Sobre</a>
     <a href="#localizacao">Localização</a>
     <a href="#contato">Contato</a>
-    <a class="drawer-wa wa-link" href="#">CHAMAR NO WHATSAPP</a>
+    <a class="drawer-whatsapp wa-link" href="#">CHAMAR NO WHATSAPP</a>
   </aside>
   <div class="drawer-overlay" id="drawerOverlay"></div>
 
   <main id="inicio">
     <section class="hero">
-      <div class="hero-red-glow"></div>
-      <div class="hero-visual" aria-hidden="true">
-        <div class="gear-ring"></div>
-        <img src="logo-robertt.png" alt="">
-      </div>
+      <div class="hero-car" aria-hidden="true"></div>
+      <div class="hero-shade"></div>
 
       <div class="hero-content">
-        <span class="eyebrow">ROBERTT SERVIÇOS MECÂNICOS</span>
+        <span class="hero-kicker">ROBERTT SERVIÇOS MECÂNICOS</span>
         <h1>MANUTENÇÃO<br>E CONFIANÇA<br><em>PARA O SEU CARRO</em></h1>
         <p>Pequenos reparos, grandes soluções.</p>
-
-        <a class="primary-btn wa-link" href="#">
-          <span class="wa-icon">◉</span>
+        <a href="#" class="whatsapp-main wa-link">
+          <span class="whats-mark">◉</span>
           CHAMAR NO WHATSAPP
         </a>
       </div>
+
+      <div class="benefits">
+        <div>
+          <span class="benefit-icon">⚙</span>
+          <strong>MANUTENÇÃO<br>PREVENTIVA</strong>
+        </div>
+        <div>
+          <span class="benefit-icon">🛠</span>
+          <strong>REPAROS<br>EM GERAL</strong>
+        </div>
+        <div>
+          <span class="benefit-icon">▣</span>
+          <strong>DIAGNÓSTICO<br>AUTOMOTIVO</strong>
+        </div>
+        <div>
+          <span class="benefit-icon">🚗</span>
+          <strong>VEÍCULOS NACIONAIS<br>E IMPORTADOS</strong>
+        </div>
+      </div>
     </section>
 
-    <section class="quick-nav" aria-label="Atalhos">
-      <a href="#servicos">
-        <span class="quick-icon">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.7 6.3a5 5 0 0 0-6.4 6.4L3 18l3 3 5.3-5.3a5 5 0 0 0 6.4-6.4l-3 3-3-3 3-3Z"/></svg>
-        </span>
-        <b>SERVIÇOS</b>
-      </a>
+    <nav class="quick-nav" aria-label="Navegação rápida">
+      <a href="#servicos"><span>🔧</span><b>SERVIÇOS</b></a>
+      <a href="#sobre"><span>🚗</span><b>SOBRE</b></a>
+      <a href="#localizacao"><span>●</span><b>LOCALIZAÇÃO</b></a>
+      <a href="#contato"><span>☎</span><b>CONTATO</b></a>
+    </nav>
 
-      <a href="#sobre">
-        <span class="quick-icon">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 16l1.5-5h11L19 16M7 11l2-4h6l2 4M6 16v2m12-2v2M4 16h16"/></svg>
-        </span>
-        <b>SOBRE</b>
-      </a>
-
-      <a href="#localizacao">
-        <span class="quick-icon">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s6-5.1 6-11a6 6 0 1 0-12 0c0 5.9 6 11 6 11Z"/><circle cx="12" cy="10" r="2"/></svg>
-        </span>
-        <b>LOCALIZAÇÃO</b>
-      </a>
-
-      <a href="#contato">
-        <span class="quick-icon">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h3l1.5 4-2 1.5a15 15 0 0 0 6 6l1.5-2 4 1.5v3c0 2-1 3-3 3C10 20 4 14 4 6c0-2 1-3 3-3Z"/></svg>
-        </span>
-        <b>CONTATO</b>
-      </a>
-    </section>
-
-    <section class="section" id="servicos">
-      <div class="section-heading">
+    <section class="section services-section" id="servicos">
+      <div class="section-head">
         <small>O QUE FAZEMOS</small>
         <h2>NOSSOS SERVIÇOS</h2>
         <i></i>
       </div>
 
-      <div class="service-grid">
+      <div class="services-grid">
         <article class="service-card">
-          <div class="service-art">
-            <svg viewBox="0 0 160 110" aria-hidden="true">
-              <path d="M56 18h48v70H56z"/><path d="M68 8h24v14H68z"/><path d="M58 35h44"/><path d="M68 51h24"/><path d="M80 61c8 11 13 18 13 25a13 13 0 0 1-26 0c0-7 5-14 13-25Z"/>
-            </svg>
-          </div>
-          <div class="service-copy">
-            <span>01</span>
+          <div class="service-photo" style="background-image:url('servico-oleo.jpg')"></div>
+          <div class="service-body">
+            <small>01</small>
             <h3>TROCA DE ÓLEO</h3>
-            <p>Óleo, filtros e manutenção preventiva para manter o motor protegido.</p>
+            <p>Óleos e filtros de qualidade para maior proteção do seu motor.</p>
           </div>
         </article>
 
         <article class="service-card">
-          <div class="service-art">
-            <svg viewBox="0 0 160 110" aria-hidden="true">
-              <circle cx="80" cy="55" r="38"/><circle cx="80" cy="55" r="12"/><circle cx="80" cy="29" r="3"/><circle cx="104" cy="55" r="3"/><circle cx="80" cy="81" r="3"/><circle cx="56" cy="55" r="3"/><path d="M114 30l18 10v30l-18 10"/>
-            </svg>
-          </div>
-          <div class="service-copy">
-            <span>02</span>
+          <div class="service-photo" style="background-image:url('servico-freios.jpg')"></div>
+          <div class="service-body">
+            <small>02</small>
             <h3>FREIOS</h3>
-            <p>Inspeção de componentes, ruídos e pequenos reparos no sistema de freios.</p>
+            <p>Inspeção e manutenção com segurança para sua direção.</p>
           </div>
         </article>
 
         <article class="service-card">
-          <div class="service-art">
-            <svg viewBox="0 0 160 110" aria-hidden="true">
-              <path d="M48 16h64M54 25l52 60M106 25L54 85"/><path d="M62 22l36 66"/><path d="M48 94h64"/>
-            </svg>
-          </div>
-          <div class="service-copy">
-            <span>03</span>
+          <div class="service-photo" style="background-image:url('servico-suspensao.jpg')"></div>
+          <div class="service-body">
+            <small>03</small>
             <h3>SUSPENSÃO</h3>
-            <p>Verificação de ruídos, folgas e componentes da suspensão.</p>
+            <p>Verificação de molas, amortecedores e componentes.</p>
           </div>
         </article>
 
         <article class="service-card">
-          <div class="service-art">
-            <svg viewBox="0 0 160 110" aria-hidden="true">
-              <rect x="38" y="18" width="84" height="60" rx="6"/><path d="M51 63l14-17 11 9 15-22 18 16"/><path d="M68 78v12m24-12v12M58 90h44"/>
-            </svg>
-          </div>
-          <div class="service-copy">
-            <span>04</span>
-            <h3>DIAGNÓSTICO</h3>
-            <p>Identificação de falhas para direcionar o reparo com mais segurança.</p>
+          <div class="service-photo" style="background-image:url('servico-diagnostico.jpg')"></div>
+          <div class="service-body">
+            <small>04</small>
+            <h3>DIAGNÓSTICO ELETRÔNICO</h3>
+            <p>Identificação de falhas com equipamentos modernos.</p>
           </div>
         </article>
       </div>
     </section>
 
-    <section class="about-section" id="sobre">
-      <div class="about-inner">
-        <div class="section-heading">
+    <section class="section about-section" id="sobre">
+      <div class="about-copy">
+        <div class="section-head">
           <small>QUEM SOMOS</small>
           <h2>SOBRE O ROBERTT</h2>
           <i></i>
         </div>
-
-        <p class="about-text">
+        <p>
           Atendimento direto, cuidado com seu veículo e transparência em cada serviço.
           Pequenos reparos e manutenção com atenção aos detalhes.
         </p>
+      </div>
 
-        <div class="feature-row">
-          <div>
-            <strong>⚙</strong>
-            <span>MANUTENÇÃO<br>PREVENTIVA</span>
-          </div>
-          <div>
-            <strong>🔧</strong>
-            <span>REPAROS<br>EM GERAL</span>
-          </div>
-          <div>
-            <strong>▣</strong>
-            <span>DIAGNÓSTICO<br>AUTOMOTIVO</span>
-          </div>
-        </div>
+      <div class="about-list">
+        <div><span>⚙</span><b>MANUTENÇÃO<br>PREVENTIVA</b></div>
+        <div><span>🛠</span><b>REPAROS<br>EM GERAL</b></div>
+        <div><span>▣</span><b>DIAGNÓSTICO<br>AUTOMOTIVO</b></div>
       </div>
     </section>
 
-    <section class="section location-section" id="localizacao">
-      <div class="section-heading">
-        <small>ENCONTRE A GENTE</small>
-        <h2>LOCALIZAÇÃO</h2>
-        <i></i>
-      </div>
-
-      <div class="map-card">
-        <div class="map-pin">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s6-5.1 6-11a6 6 0 1 0-12 0c0 5.9 6 11 6 11Z"/><circle cx="12" cy="10" r="2"/></svg>
+    <section class="location-section" id="localizacao">
+      <div class="section location-copy">
+        <div class="section-head">
+          <small>ENCONTRE A GENTE</small>
+          <h2>LOCALIZAÇÃO</h2>
+          <i></i>
         </div>
-        <strong>LOCALIZAÇÃO DO ROBERTT</strong>
-        <p>O endereço e o mapa serão adicionados quando você me passar a localização.</p>
+
+        <div class="location-card">
+          <div class="location-pin">●</div>
+          <div>
+            <strong>LOCALIZAÇÃO DO ROBERTT</strong>
+            <p>Clique no botão abaixo para ver no mapa.</p>
+          </div>
+        </div>
+
+        <a href="#" class="map-btn" id="mapBtn">● &nbsp; VER NO MAPA</a>
       </div>
 
-      <a class="primary-btn map-link" href="#">VER NO MAPA</a>
+      <div class="map-visual"></div>
     </section>
 
-    <section class="contact-section" id="contato">
+    <section class="contact-strip" id="contato">
       <div>
         <small>ATENDIMENTO DIRETO</small>
         <h2>PRECISANDO DE UM REPARO?</h2>
-        <p>Fale agora com o Robertt e solicite seu atendimento.</p>
+        <p>Fale diretamente com o Robertt.</p>
       </div>
-      <a class="primary-btn wa-link" href="#">CHAMAR NO WHATSAPP</a>
+      <a href="#" class="contact-wa wa-link">CHAMAR NO WHATSAPP</a>
     </section>
   </main>
 
   <footer class="footer">
     <img src="logo-robertt.png" alt="ROBERTT Serviços Mecânicos">
     <p>Pequenos reparos, grandes soluções.</p>
-    <small>© 2026 ROBERTT Serviços Mecânicos</small>
+    <div class="footer-icons"><span>◎</span><span>●</span></div>
   </footer>
 
-  <a class="floating-wa wa-link" href="#" aria-label="Falar no WhatsApp">◉</a>
+  <a class="floating-wa wa-link" href="#" aria-label="Chamar no WhatsApp">◉</a>
 
-  <script src="script.js?v=2"></script>
+  <script src="script.js?v=3"></script>
 </body>
 </html>
