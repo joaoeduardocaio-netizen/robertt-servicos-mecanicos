@@ -1,0 +1,7 @@
+ROBERTT — SERVIÇOS MECÂNICOS
+
+Primeira versão seguindo a referência aprovada.
+
+Arquivos: index.html, style.css, script.js.
+
+Próximos ajustes: logo final, WhatsApp, endereço/Google Maps, serviços exatos, fotos reais, texto Sobre, domínio e hospedagem.
