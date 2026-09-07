@@ -51,7 +51,7 @@ button{font:inherit;color:inherit}
   position:absolute;right:0;top:0;width:50%;height:470px;
   background-image:url('hero-car.jpg');
   background-size:cover;background-position:center;
-  filter:contrast(1.08) brightness(.88)
+  filter: brightness(1.45) contrast(1.20) saturate(1.18);
 }
 .hero-car:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#050505 0,transparent 52%)}
 .hero-shade{position:absolute;inset:auto 0 0;height:180px;background:linear-gradient(transparent,#050505)}
