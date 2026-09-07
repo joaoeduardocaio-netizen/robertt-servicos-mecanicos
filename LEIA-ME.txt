@@ -1,7 +1,24 @@
-ROBERTT — SERVIÇOS MECÂNICOS
+ROBERTT — SERVIÇOS MECÂNICOS — V2
 
-Primeira versão seguindo a referência aprovada.
+Substitua todos os arquivos do site pelos arquivos desta pasta/ZIP:
 
-Arquivos: index.html, style.css, script.js.
+- index.html
+- style.css
+- script.js
+- logo-robertt.png
 
-Próximos ajustes: logo final, WhatsApp, endereço/Google Maps, serviços exatos, fotos reais, texto Sobre, domínio e hospedagem.
+ALTERAÇÕES:
+- visual mais próximo da referência aprovada
+- logo ROBERTT oficial no header, menu e rodapé
+- remoção do carro/emoji simples do protótipo
+- hero mais profissional em preto, vermelho e prata
+- cards de serviços redesenhados
+- WhatsApp configurado: (48) 99802-0978
+- botões e botão flutuante já direcionam para o WhatsApp
+- menu mobile revisado
+
+AINDA FALTA:
+- endereço / Google Maps
+- texto final do Robertt
+- serviços exatos
+- eventualmente fotos reais dos trabalhos
